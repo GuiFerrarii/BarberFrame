@@ -29,9 +29,13 @@ fr0_bt1 = Button(fr0,  text="Barbearia",command=lambda: [fr0.grid_remove(),fr3.g
 
 #frame2
 fr2_img_1 = PhotoImage(file="imagens\\cadast.png")
-fr2_img_1 = Label(fr2,width=480).grid(row=0,column=0,sticky=W)
+fr2_lab = Label(fr2,image=fr2_img_1,width=480).grid(row=0,column=0,sticky=W)
+fr2_bt0 = Button(fr2,  text="Cadastrar",command=lambda: [fr2.grid_remove(),fr4.grid(),root.geometry("490x560+610+153"),root.title("Tela Agenda")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+                    highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=65, y=424)
 
-
+#frame3
+fr3_img_1 = PhotoImage(file="imagens\\cdsbarb.png")
+fr3_lab = Label(fr3,image=fr3_img_1,width=480).grid(row=0,column=0,sticky=W)
 
 
 fr0.grid()
