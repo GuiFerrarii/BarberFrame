@@ -69,6 +69,7 @@ fr2_in1.place(width=230, height=39, x=130, y=203)
 fr4_img = PhotoImage(file="imagens\\serviço.png")
 fr4_lab = Label(fr4, image=fr4_img,width=480).grid(row=0,column=0,sticky=W)
 
+#frame5
 fr5_img = PhotoImage(file="imagens\\cdsfuncionario.png")
 fr5_lab = Label(fr5, image=fr5_img,width=480).grid(row=0,column=0,sticky=W)
 
