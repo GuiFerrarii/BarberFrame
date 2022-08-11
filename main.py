@@ -72,6 +72,23 @@ fr4_lab = Label(fr4, image=fr4_img,width=480).grid(row=0,column=0,sticky=W)
 fr5_img = PhotoImage(file="imagens\\cdsfuncionario.png")
 fr5_lab = Label(fr5, image=fr5_img,width=480).grid(row=0,column=0,sticky=W)
 
+fr4_bt = Button(fr4, text="corte na tesoura", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+                ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=8, y=435)
+
+fr4_bt1 = Button(fr4, text="pezinho", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+                ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=130, y=435)
+
+fr4_bt2 = Button(fr4, text="corte moderno", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+                ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=240, y=435)
+
+fr4_bt3 = Button(fr4, text="lavagem", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+                ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=355, y=435)
+
+fr4_bt4 = Button(fr4, text="barba", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+                ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=185, y=540)
+
+
+
 
 
 
