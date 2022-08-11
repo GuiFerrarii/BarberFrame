@@ -12,6 +12,8 @@ fr2 = Frame()
 fr3 = Frame()
 fr4 = Frame()
 fr5 = Frame()
+fr6 = Frame()
+fr7 = Frame()
 
 
 
@@ -52,10 +54,10 @@ fr2_in1.place(width=230, height=39, x=130, y=203)
 #frame3
 fr3_img_1 = PhotoImage(file="imagens\\cdsbarb.png")
 fr3_lab = Label(fr3,image=fr3_img_1,width=480).grid(row=0,column=0,sticky=W)
-fr3_bt0 = Button(fr3,  text="Cadastrar",command=lambda: [fr3.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Tela funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+fr3_bt0 = Button(fr3,  text="Cadastrar",command=lambda: [fr3.grid_remove(),fr6.grid(),root.geometry("490x560+610+153"),root.title("Tela funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=65, y=424)
 
-fr3_bt1 = Button(fr3,  text="Entrar",command=lambda: [fr3.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Tela Funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+fr3_bt1 = Button(fr3,  text="Entrar",command=lambda: [fr3.grid_remove(),fr6.grid(),root.geometry("490x560+610+153"),root.title("Tela Funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=299, y=424)
 
 fr3_in0 = Entry(fr3, bd=0,bg='#1D1F21',fg='white', font=("Calibri", 15), justify=CENTER)
@@ -69,7 +71,7 @@ fr2_in1.place(width=230, height=39, x=130, y=203)
 fr4_img = PhotoImage(file="imagens\\serviço.png")
 fr4_lab = Label(fr4, image=fr4_img,width=480).grid(row=0,column=0,sticky=W)
 
-
+#buttons serviço
 
 fr4_bt = Button(fr4, text="corte na tesoura", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=8, y=435)
@@ -87,9 +89,36 @@ fr4_bt4 = Button(fr4, text="barba", command=lambda: [fr4.grid_remove(),fr5.grid(
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=185, y=540)
 
 
-#frame5
-fr5_img = PhotoImage(file="imagens\\cdsfuncionario.png")
-fr5_lab = Label(fr5, image=fr5_img,width=480).grid(row=0,column=0,sticky=W)
+#frame5 tela agenda
+
+fr5_image = PhotoImage(file="imagens\\agenda.png")
+fr5_lab = Label(fr5,image=fr5_image,width=480).grid(row=0,column=0,sticky=W)
+
+#buttons agenda
+
+fr5_bt_1 = Button(fr5, text="9:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+                ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=33, y=293)
+
+r5_bt_2 = Button(fr5, text="10:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+                ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=173, y=293)
+
+r5_bt_3 = Button(fr5, text="11:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+                ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=320, y=293)
+
+r5_bt_4 = Button(fr5, text="13:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+                ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=33, y=385)
+
+r5_bt_5 = Button(fr5, text="14:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+                ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=173, y=385)
+
+#casastrado
+
+fr6_img = PhotoImage(file="imagens\\cdsfuncionario.png")
+fr6_lab = Label(fr6, image=fr6_img,width=480).grid(row=0,column=0,sticky=W)
+
+#fr7
+fr7_img = PhotoImage(file="imagens\\hora_marc.png")
+fr7_lab = Label(fr7, image=fr7_img,width=480).grid(row=0,column=0,sticky=W)
 
 fr0.grid()
 root.mainloop()
