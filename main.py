@@ -14,6 +14,7 @@ fr4 = Frame()
 fr5 = Frame()
 
 
+
 #frame0
 fr0_img_1 = PhotoImage(file="imagens\\barber.png")
 
@@ -28,7 +29,6 @@ fr0_bt0 = Button(fr0,  text="Usuário",command=lambda: [fr0.grid_remove(),fr2.gr
 
 fr0_bt1 = Button(fr0,  text="Cadastro Barbeiro",command=lambda: [fr0.grid_remove(),fr3.grid(),root.geometry("490x560+610+153"),root.title("Janela Barberia")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=150,height=14, x=172, y=487)
-
 
 
 
@@ -69,9 +69,7 @@ fr2_in1.place(width=230, height=39, x=130, y=203)
 fr4_img = PhotoImage(file="imagens\\serviço.png")
 fr4_lab = Label(fr4, image=fr4_img,width=480).grid(row=0,column=0,sticky=W)
 
-#frame5
-fr5_img = PhotoImage(file="imagens\\cdsfuncionario.png")
-fr5_lab = Label(fr5, image=fr5_img,width=480).grid(row=0,column=0,sticky=W)
+
 
 fr4_bt = Button(fr4, text="corte na tesoura", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=8, y=435)
@@ -89,9 +87,9 @@ fr4_bt4 = Button(fr4, text="barba", command=lambda: [fr4.grid_remove(),fr5.grid(
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=185, y=540)
 
 
-
-
-
+#frame5
+fr5_img = PhotoImage(file="imagens\\cdsfuncionario.png")
+fr5_lab = Label(fr5, image=fr5_img,width=480).grid(row=0,column=0,sticky=W)
 
 fr0.grid()
 root.mainloop()
