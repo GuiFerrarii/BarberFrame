@@ -71,10 +71,10 @@ fr0_bt1 = Button(fr0,  text="Cadastro Barbeiro",command=lambda: [fr0.grid_remove
 #frame2
 fr2_img_1 = PhotoImage(file="imagens\\cadast.png")
 fr2_lab = Label(fr2,image=fr2_img_1,width=480).grid(row=0,column=0,sticky=W)
-fr2_bt0 = Button(fr2,  text="Cadastrar",command=lambda: [fr2.grid_remove(),fr4.grid(),root.geometry("490x560+610+153"),root.title("Tela Agenda")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+fr2_bt0 = Button(fr2,  text="Cadastrar",command=lambda: [fr2.grid_remove(),fr4.grid(),root.geometry("490x560+610+153"),root.title("Tela Serviços")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=65, y=424)
 
-fr2_bt1 = Button(fr2,  text="Entrar",command=lambda: [fr2.grid_remove(),fr4.grid(),root.geometry("490x560+610+153"),root.title("Tela Agenda")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+fr2_bt1 = Button(fr2,  text="Entrar",command=lambda: [fr2.grid_remove(),fr4.grid(),root.geometry("490x560+610+153"),root.title("Tela Serviços")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=299, y=424)
 
 fr2_in0 = Entry(fr2, bd=0,bg='#1D1F21',fg='white',textvariable=var1, font=("Calibri", 15), justify=CENTER)
@@ -88,10 +88,10 @@ fr2_in1.place(width=230, height=39, x=130, y=203)
 #frame3
 fr3_img_1 = PhotoImage(file="imagens\\cdsbarb.png")
 fr3_lab = Label(fr3,image=fr3_img_1,width=480).grid(row=0,column=0,sticky=W)
-fr3_bt0 = Button(fr3,  text="Cadastrar",command=lambda: [fr3.grid_remove(),fr6.grid(),root.geometry("490x560+610+153"),root.title("Tela funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+fr3_bt0 = Button(fr3,  text="Cadastrar",command=lambda: [fr3.grid_remove(),fr6.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=65, y=424)
 
-fr3_bt1 = Button(fr3,  text="Entrar",command=lambda: [fr3.grid_remove(),fr6.grid(),root.geometry("490x560+610+153"),root.title("Tela Funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+fr3_bt1 = Button(fr3,  text="Entrar",command=lambda: [fr3.grid_remove(),fr6.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=299, y=424)
 
 fr3_in0 = Entry(fr3, bd=0,bg='#1D1F21',textvariable=var2,fg='white', font=("Calibri", 15), justify=CENTER)
@@ -107,19 +107,19 @@ fr4_lab = Label(fr4, image=fr4_img,width=480).grid(row=0,column=0,sticky=W)
 
 #buttons serviço
 
-fr4_bt = Button(fr4, text="corte na tesoura", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+fr4_bt = Button(fr4, text="corte na tesoura", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agendamento")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=8, y=435)
 
-fr4_bt1 = Button(fr4, text="pezinho", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+fr4_bt1 = Button(fr4, text="pezinho", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agendamento")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=130, y=435)
 
-fr4_bt2 = Button(fr4, text="corte moderno", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+fr4_bt2 = Button(fr4, text="corte moderno", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agendamento")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=240, y=435)
 
-fr4_bt3 = Button(fr4, text="lavagem", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+fr4_bt3 = Button(fr4, text="lavagem", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agendamento")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=355, y=435)
 
-fr4_bt4 = Button(fr4, text="barba", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("TESTE BUTTON")]
+fr4_bt4 = Button(fr4, text="barba", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agendamento")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=185, y=540)
 
 
@@ -130,19 +130,19 @@ fr5_lab = Label(fr5,image=fr5_image,width=480).grid(row=0,column=0,sticky=W)
 
 #buttons agenda
 
-fr5_bt_1 = Button(fr5, text="9:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+fr5_bt_1 = Button(fr5, text="9:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
                 ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=33, y=293)
 
-r5_bt_2 = Button(fr5, text="10:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+r5_bt_2 = Button(fr5, text="10:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
                 ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=173, y=293)
 
-r5_bt_3 = Button(fr5, text="11:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+r5_bt_3 = Button(fr5, text="11:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
                 ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=320, y=293)
 
-r5_bt_4 = Button(fr5, text="13:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+r5_bt_4 = Button(fr5, text="13:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
                 ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=33, y=385)
 
-r5_bt_5 = Button(fr5, text="14:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Agenda")]
+r5_bt_5 = Button(fr5, text="14:00 am", command=lambda: [fr5.grid_remove(),fr7.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
                 ,bg='#FFFFFF',font='arimo 15',highlightcolor='#FFFFFF', highlightbackground='#FFFFFF',highlightthickness=0,bd='0',activebackground='#ffffff',fg='#1D1F21').place(width=111,height=15, x=173, y=385)
 
 #cadastrado
