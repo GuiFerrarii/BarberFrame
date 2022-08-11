@@ -12,6 +12,8 @@ fr2 = Frame()
 fr3 = Frame()
 fr4 = Frame()
 fr5 = Frame()
+
+
 #frame0
 fr0_img_1 = PhotoImage(file="imagens\\barber.png")
 
@@ -28,6 +30,8 @@ fr0_bt1 = Button(fr0,  text="Cadastro Barbeiro",command=lambda: [fr0.grid_remove
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=150,height=14, x=172, y=487)
 
 
+
+
 #frame2
 fr2_img_1 = PhotoImage(file="imagens\\cadast.png")
 fr2_lab = Label(fr2,image=fr2_img_1,width=480).grid(row=0,column=0,sticky=W)
@@ -37,6 +41,14 @@ fr2_bt0 = Button(fr2,  text="Cadastrar",command=lambda: [fr2.grid_remove(),fr4.g
 fr2_bt1 = Button(fr2,  text="Entrar",command=lambda: [fr2.grid_remove(),fr4.grid(),root.geometry("490x560+610+153"),root.title("Tela Agenda")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=299, y=424)
 
+fr2_in0 = Entry(fr2, bd=0,bg='#1D1F21',fg='white', font=("Calibri", 15), justify=CENTER)
+fr2_in0.place(width=230, height=39, x=130, y=125)
+
+fr2_in1 = Entry(fr2, bd=0,bg='#1D1F21',fg='white', font=("Calibri", 15), justify=CENTER)
+fr2_in1.place(width=230, height=39, x=130, y=203)
+
+
+
 #frame3
 fr3_img_1 = PhotoImage(file="imagens\\cdsbarb.png")
 fr3_lab = Label(fr3,image=fr3_img_1,width=480).grid(row=0,column=0,sticky=W)
@@ -45,6 +57,13 @@ fr3_bt0 = Button(fr3,  text="Cadastrar",command=lambda: [fr3.grid_remove(),fr5.g
 
 fr3_bt1 = Button(fr3,  text="Entrar",command=lambda: [fr3.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Tela Funcionário")],bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
                     highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=299, y=424)
+
+fr3_in0 = Entry(fr3, bd=0,bg='#1D1F21',fg='white', font=("Calibri", 15), justify=CENTER)
+fr3_in0.place(width=230, height=39, x=130, y=125)
+
+fr2_in1 = Entry(fr3, bd=0,bg='#1D1F21',fg='white', font=("Calibri", 15), justify=CENTER)
+fr2_in1.place(width=230, height=39, x=130, y=203)
+
 
 #frame4
 fr4_img = PhotoImage(file="imagens\\serviço.png")
