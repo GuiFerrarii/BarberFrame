@@ -6,6 +6,7 @@ root.title("Barber Shop")
 root.geometry("490x560+610+153")
 root.resizable(height=False, width=False)
 
+
 fr0 = Frame()
 fr1 = Frame()
 fr2 = Frame()
@@ -49,6 +50,9 @@ def nome1(event=None):
             y+=x[i]
     fr3_in0.delete(0, 'end')
     fr3_in0.insert(0, y)
+
+
+
 
 
 
@@ -97,6 +101,9 @@ fr3_bt1 = Button(fr3,  text="Entrar",command=lambda: [fr3.grid_remove(),fr6.grid
 fr3_in0 = Entry(fr3, bd=0,bg='#1D1F21',textvariable=var2,fg='white', font=("Calibri", 15), justify=CENTER)
 fr3_in0.place(width=230, height=39, x=130, y=125)
 fr3_in0.bind('<KeyRelease>', nome1)
+fr3_in1 = Entry(fr3, bd=0,bg='#1D1F21',textvariable=var1,fg='white', font=("Calibri", 15), justify=CENTER)
+fr3_in1.place(width=230, height=39, x=130, y=203)
+
 
 
 
@@ -150,9 +157,10 @@ r5_bt_5 = Button(fr5, text="14:00 am", command=lambda: [fr5.grid_remove(),fr7.gr
 fr6_img = PhotoImage(file="imagens\\cdsfuncionario.png")
 fr6_lab = Label(fr6, image=fr6_img,width=480).grid(row=0,column=0,sticky=W)
 
-#fr7
+#fr7 hora-marcada
 fr7_img = PhotoImage(file="imagens\\hora_marc.png")
 fr7_lab = Label(fr7, image=fr7_img,width=480).grid(row=0,column=0,sticky=W)
+
 
 fr0.grid()
 root.mainloop()
