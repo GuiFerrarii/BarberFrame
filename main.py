@@ -129,6 +129,11 @@ fr4_bt3 = Button(fr4, text="lavagem", command=lambda: [fr4.grid_remove(),fr5.gri
 fr4_bt4 = Button(fr4, text="barba", command=lambda: [fr4.grid_remove(),fr5.grid(),root.geometry("490x560+610+153"),root.title("Agendamento")]
                 ,bg='#1d1f21',font='arimo 8',highlightcolor='#1d1f21', highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=111,height=15, x=185, y=540)
 
+var = IntVar()
+
+c1 = Checkbutton(fr4, text='1',variable=var,bg='#1d1f21',onvalue=1,activebackground='#1d1f21', offvalue=0).place(width=111,height=20, x=100, y=265)
+c2 = Checkbutton(fr4, text='2',variable=var,bg='#1d1f21',activebackground='#1d1f21', onvalue=2, offvalue=1).place(width=111,height=20, x=265, y=265)
+
 
 #frame5 tela agenda
 
@@ -156,10 +161,16 @@ r5_bt_5 = Button(fr5, text="14:00 am", command=lambda: [fr5.grid_remove(),fr7.gr
 
 fr6_img = PhotoImage(file="imagens\\cdsfuncionario.png")
 fr6_lab = Label(fr6, image=fr6_img,width=480).grid(row=0,column=0,sticky=W)
+fr6_bt_1 = Button(fr6, text="Voltar", command=lambda: [fr6.grid_remove(),fr0.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
+                                  ,bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+                                  highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=183, y=449)
 
 #fr7 hora-marcada
 fr7_img = PhotoImage(file="imagens\\hora_marc.png")
 fr7_lab = Label(fr7, image=fr7_img,width=480).grid(row=0,column=0,sticky=W)
+fr7_bt_1 = Button(fr7, text="Voltar", command=lambda: [fr7.grid_remove(),fr0.grid(),root.geometry("490x560+610+153"),root.title("Tela Final")]
+                                  ,bg='#1d1f21',font='arimo',highlightcolor='#1d1f21',
+                                  highlightbackground='#1d1f21',highlightthickness=0,bd='0',activebackground='#1d1f21',fg='#F6F9F8').place(width=118,height=14, x=183, y=449)
 
 
 fr0.grid()
